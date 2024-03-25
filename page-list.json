@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Home",
+    "href": "index.html",
+    "tags": [],
+    "description": "Home page",
+    "includedInNavbar": true
+  },
+  {
+    "title": "Blog",
+    "href": "blog.html",
+    "tags": ["blogs", "posts", "news", "updates"],
+    "description": "Blog posts",
+    "includedInNavbar": true
+  },
+  {
+    "title": "Products",
+    "href": "products.html",
+    "tags": ["product", "products", "buy", "purchase"],
+    "description": "Products to purchase",
+    "includedInNavbar": true
+  },
+  {
+    "title": "Is water wet?",
+    "href": "articles.html?id=is-water-wet",
+    "description": "Lets look at water, is it wet? Or is it dry??",
+    "tags": ["water", "wet", "post", "news"],
+    "includedInNavbar": false,
+    "previewImage": "images/water-wet.jpg"
+  }
+]
