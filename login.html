@@ -9,7 +9,7 @@
     <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 
-    <script defer src="gen-navbar.js"></script>
+    <script defer src="js/gen-navbar.js"></script>
 </head>
 <body>
     <div class="container">
@@ -32,8 +32,56 @@
 
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary">Login</button>
-                        <button type="submit" class="btn btn-secondary">Forgot password</button>
+
+                        <button 
+                            type="button" 
+                            class="btn btn-secondary" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#passwordForgotModal"
+                        >
+                            Forgot password
+                        </button>
                     </div>
+
+                    <div 
+                        class="modal fade" 
+                        id="passwordForgotModal" 
+                        tabindex="-1" 
+                        aria-labelledby="passwordForgotModal" 
+                        aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="passwordForgotModal">
+                                Forgot Password
+                            </h1>
+
+                            <button 
+                                type="button" 
+                                class="btn-close" 
+                                data-bs-dismiss="modal" 
+                                aria-label="Close"
+                            >
+                            </button>
+                          </div>
+
+                          <div class="modal-body">lol</div>
+
+                          <div class="modal-footer">
+                            <button 
+                                type="button" 
+                                class="btn btn-secondary" 
+                                data-bs-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
                 </form>
             </div>
         </div>

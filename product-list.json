@@ -1,0 +1,62 @@
+{
+  "courses": {
+    "title": "Courses",
+    "description": "Courses that don't help you",
+    "products": [
+      {
+        "id": "overpriced-course-js",
+        "name": "Overpriced JavaScript Course",
+        "price": 149.99,
+        "heroimage": "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
+        "imgAlt": "Unofficial JavaScript Logo",
+        "description": "An overpriced course filled with information you could've found by googling or, let's be honest, using ChatGPT"
+      },
+      {
+        "id": "overpriced-course-rust",
+        "name": "Overpriced Rust Course",
+        "price": 199.99,
+        "heroimage": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg",
+        "imgAlt": "Rust Logo",
+        "description": "A course of video tutorials that "
+      },
+      {
+        "id": "overpriced-course-java",
+        "name": "Overpriced Java Course",
+        "price": 99.99,
+        "heroimage": "https://upload.wikimedia.org/wikipedia/commons/4/47/Java_Black_icon.svg",
+        "imgAlt": "Java Logo",
+        "description": "You get the point"
+      },
+      {
+        "id": "overpriced-course-cpp",
+        "name": "Overpriced Java Course",
+        "price": 99.99,
+        "heroimage": "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+        "imgAlt": "C++ Logo",
+        "description": "4th one to complete the row"
+      }
+    ]
+  },
+  "games": {
+    "title": "Games",
+    "description": "Games I haven't made",
+    "products": [
+      {
+        "id": "game-1",
+        "name": "Tetris, written in Brainf*ck",
+        "price": 0,
+        "heroimage": "https://picsum.photos/300/460",
+        "imgAlt": "Cover of a game I totally made",
+        "description": "Tetris, written entirely in Brainf*ck"
+      },
+      {
+        "id": "game-2",
+        "name": "2D Pixel shooter",
+        "price": 1.49,
+        "heroimage": "https://picsum.photos/seed/picsum/300/460",
+        "imgAlt": "Game cover",
+        "description": "A generic 2D pixel shooter written from scratch in JavaScript"
+      }
+    ]
+  }
+}

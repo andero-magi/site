@@ -88,6 +88,7 @@ function appendSearch(node) {
   input.placeholder = "Search"
   input.ariaLabel = "Search"
   input.name = "query"
+  input.id = "search-input"
 
   let button = document.createElement("button")
   button.classList.add("btn", "btn-outline-success")

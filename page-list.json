@@ -21,6 +21,13 @@
     "includedInNavbar": true
   },
   {
+    "title": "Contact us",
+    "href": "contact-us.html",
+    "tags": ["contact", "contact us", "email"],
+    "description": "Get in contact with us!",
+    "includedInNavbar": true
+  },
+  {
     "title": "Is water wet?",
     "href": "articles.html?id=is-water-wet",
     "description": "Lets look at water, is it wet? Or is it dry??",

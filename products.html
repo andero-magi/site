@@ -9,9 +9,45 @@
     <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 
-    <script defer src="gen-navbar.js"></script>
+    <script defer src="js/gen-navbar.js"></script>
+    <script defer src="js/gen-products.js"></script>
 </head>
 <body>
+    <div class="container" id="product-container">
+        <h1 class="text-center">Products</h1>
+        <p class="text-center mb-5">Purchase merchandise, products and courses</p>
+    </div>
 
+    <div 
+        class="modal fade" 
+        id="purchase-modal" 
+        tabindex="-1" 
+        aria-labelledby="purchase-modal-title" 
+        aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="purchase-modal-title">
+                Modal Title
+            </h1>
+            <button 
+                type="button" 
+                class="btn-close" 
+                data-bs-dismiss="modal" 
+                aria-label="Close"
+            >
+            </button>
+          </div>
+          <div class="modal-body" id="purchase-modal-body">
+            Modal Body
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Proceed to checkout</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
