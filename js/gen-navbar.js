@@ -1,7 +1,7 @@
 const BODY = document.body
 const HOME_HREF = "index.html"
 
-fetch("/page-list.json")
+fetch("/data/page-list.json")
   .then(response => {
     return response.json()
   })

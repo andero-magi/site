@@ -10,10 +10,52 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 
     <script defer src="js/gen-navbar.js"></script>
+    <script defer src="js/gen-footer.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1 class="text-center">Homepage!</h1>
+    <h1 class="text-center">Imaginary Corp.</h1>
+
+    <div id="indexCarousel" class="carousel carousel-dark slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/stock1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/stock2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/stock3.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/stock4.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#indexCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#indexCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <hr>
+    <div class="text-center h3">Delivering only the finest quality of sarcasm</div>
+    <hr>
+
+    <div class="row align-items-start mb-5 justify-center">
+      <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cum autem excepturi, eius expedita, consequuntur hic voluptatibus labore deserunt a eveniet quas minima corrupti nihil earum dolore, rem sequi beatae?</div>
+      <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cum autem excepturi, eius expedita, consequuntur hic voluptatibus labore deserunt a eveniet quas minima corrupti nihil earum dolore, rem sequi beatae?</div>
+      <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cum autem excepturi, eius expedita, consequuntur hic voluptatibus labore deserunt a eveniet quas minima corrupti nihil earum dolore, rem sequi beatae?</div>
+      <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cum autem excepturi, eius expedita, consequuntur hic voluptatibus labore deserunt a eveniet quas minima corrupti nihil earum dolore, rem sequi beatae?</div>
+    </div>
   </div>
+
+  
+  <footer id="page-footer">
+    <!-- Filled by JS script: gen-footer --->
+  </footer>
 </body>
 </html>

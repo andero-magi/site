@@ -29,10 +29,22 @@
   },
   {
     "title": "Is water wet?",
-    "href": "articles.html?id=is-water-wet",
+    "href": "articles.html?id=wet_water",
     "description": "Lets look at water, is it wet? Or is it dry??",
-    "tags": ["water", "wet", "post", "news"],
+    "tags": ["water", "wet", "posts", "news"],
     "includedInNavbar": false,
-    "previewImage": "images/water-wet.jpg"
+    "previewImage": "images/water-wet.jpg",
+    "imgAlt": "A water drop",
+    "blogContent": "posts/wet_water.json"
+  },
+  {
+    "title": "Is Fire alive?",
+    "href": "articles.html?id=living-fire",
+    "description": "Continuing the exploration of perplexing questions, let's delve into the intriguing topic of whether fire is alive or not...",
+    "tags": ["fire", "alive", "post", "news"],
+    "includedInNavbar": false,
+    "previewImage": "images/living-fire.webp",
+    "imgAlt": "A lake of fire in which the innocent burn for eternity, condemned for the capitalist sin of caring for your fellow man",
+    "blogContent": "posts/living-fire.json"
   }
 ]

@@ -11,16 +11,18 @@ let productTable = {}
 if (container == null) {
   console.error("Failed to find product container element")
 } else {
-  fetch("/product-list.json")
+  fetch("/data/product-list.json")
     .then(response => {
       return response.json()
     })
     .then(productList => {
-      main(productList)
+      genProducts(productList)
     })
 }
 
-function main(data) {
+function genProducts(data) {
+  console.info("data = ", data)
+
   for (let catKey in data) {
     let category = data[catKey]
 
@@ -75,31 +77,6 @@ function appendCategoryProducts(productList) {
   }
 }
 
-function formatDataBetter(productData) {
-  let categories = productData.categories
-  let products = productData.products
-
-  for (let index in products) {
-    let product = products[index]
-    let category = categories[product.category]
-
-    if (category == null) {
-      category = {}
-      categories[product.category] = category
-    }
-
-    let prods = category.products;
-    if (prods == null) {
-      prods = []
-      category.products = prods
-    }
-
-    prods.push(product)
-  }
-
-  return categories
-}
-
 function createRow() {
   let r = document.createElement("div")
   r.className = "row"
@@ -108,8 +85,8 @@ function createRow() {
 
 function createProductCard(productData) {
   let rootDiv = document.createElement("div")
-  rootDiv.className = "card mb-3"
-  rootDiv.style = "width: 18rem;"
+  rootDiv.className = "card mb-3 col"
+  //rootDiv.style = "width: 18rem;"
 
   rootDiv.innerHTML = /*html*/`
     <img class="card-img-top" src="${productData.heroimage}" alt="${productData.imgAlt}">

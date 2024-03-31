@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 
     <script defer src="js/gen-navbar.js"></script>
+    <script defer src="js/gen-footer.js"></script>
 </head>
 <body>
     <div class="container">
@@ -66,9 +67,22 @@
                             </button>
                           </div>
 
-                          <div class="modal-body">lol</div>
+                          <div class="modal-body">
+                            <form action="">
+                                <label class="form-label" for="forgot-email">Account Email:</label>
+                                <input name="forgot-email" class="form-control" type="email">
+                            </form>
+                          </div>
 
                           <div class="modal-footer">
+                            <button 
+                                type="button" 
+                                class="btn btn-primary" 
+                                data-bs-dismiss="modal"
+                            >
+                                Send recovery code
+                            </button>
+
                             <button 
                                 type="button" 
                                 class="btn btn-secondary" 
@@ -86,5 +100,10 @@
             </div>
         </div>
     </div>
+
+    
+    <footer id="page-footer">
+        <!-- Filled by JS script: gen-footer --->
+      </footer>
 </body>
 </html>

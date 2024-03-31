@@ -1,6 +1,6 @@
 const CONTAINER_ID = "search-result-container"
 
-fetch("/page-list.json")
+fetch("/data/page-list.json")
   .then(response => {
     return response.json()
   })
@@ -55,8 +55,15 @@ function appendSearchResult(container, pageData) {
   resultElement.className = "card mb-3"
   resultElement.href = pageData.href
 
+  let imgStr = ""
+  let previewImage = pageData.previewImage
+  if (previewImage != null && previewImage.length > 0) {
+    imgStr = `<img class="img-fluid card-img" src="${previewImage}">`
+  }
+
   resultElement.innerHTML = `
-    <div class="card-header">${pageData.title}</div>
+    <div class="card-header"><h3>${pageData.title}</h3></div>
+    ${imgStr}
     <div class="card-body">
       <p class="card-text">${pageData.description}</p>
     </div>
